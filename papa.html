@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You, Dad!</title>
+    <link rel="stylesheet" href="mama.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="form-container">
+            <h1>Enter Your Details</h1>
+            <form id="details-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="nickname">What does my brother call me at home?</label>
+                <input type="text" id="nickname" name="nickname" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <button type="submit">Proceed</button>
+            </form>
+        </div>
+        
+        <div class="card" id="card" style="display: none;">
+            <h1>Thank You, Dad!</h1>
+            <p>Dear Dad</p>
+            <p>
+                Today is my special day, but it's also a day to celebrate you. 
+                Thank you for your endless love, support, and guidance throughout my life. 
+                I am so grateful for everything you have done for me. 
+                Your love and care have shaped me into the person I am today.
+            </p>
+            <p>With all my love,</p>
+            <p><strong id="user-name"></strong></p>
+            <button onclick="playAudio()">Play Message</button>
+            <audio id="audio" src="message.mp3"></audio>
+        </div>
+    </div>
+    <script src="papa.js"></script>
+</body>
+</html>
